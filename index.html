@@ -124,6 +124,7 @@
     .allocation-list, .ranking-list { list-style: none; padding: 0; margin: 0; }
     .allocation-list { display: grid; gap: 11px; max-height: 255px; overflow: auto; padding-right: 6px; }
     .allocation-item { display: grid; grid-template-columns: 9px 1fr auto; gap: 10px; align-items: center; }
+    .allocation-item:not(:has(.dot)) { display: block; padding: 28px 18px; color: var(--muted); text-align: center; }
     .dot { width: 9px; height: 9px; border-radius: 50%; }
     .allocation-name { min-width: 0; }
     .allocation-name strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .78rem; }
